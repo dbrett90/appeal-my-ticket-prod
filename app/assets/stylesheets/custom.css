@@ -133,6 +133,9 @@ input[type="checkbox"]{
     color:white;
 }
 
+.jumbotron-gradient{
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
 
 
 /* MOBILE SPECIFIC CSS */
