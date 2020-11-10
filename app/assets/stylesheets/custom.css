@@ -143,6 +143,26 @@ input[type="checkbox"]{
   font-weight: 800;
 }
 
+.rounded-button{
+  border-radius: 30px;
+  font-size: 18px;
+  color: #4158d0;
+  font-weight: 600;
+  /* height: 50px;
+  width: 100%; */
+}
+/* .wrapper ul li a:hover:after{
+  transform: scaleY(1);
+} */
+/* .rounded-button:hover{
+  color: #4158d0;
+} */
+
+/* FAQS Page */
+.FAQ-Header{
+  color: white;
+}
+
 
 /* MOBILE SPECIFIC CSS */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
