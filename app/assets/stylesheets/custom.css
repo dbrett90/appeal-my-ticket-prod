@@ -137,6 +137,12 @@ input[type="checkbox"]{
     background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 
+.title-large{
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
 
 /* MOBILE SPECIFIC CSS */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
