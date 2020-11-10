@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="mainNavbar">
+    <button class="navbar-toggler navbar-toggler nav-collpase-mobile float-xs-left mr-auto" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class = "navbar-nav mr-auto">
+            <li class="nav-item active n-homepage nav-text-mobile"><%= link_to "Home",   root_path, class: "nav-color nav-link nav-text-mobile", id: "test-color" %><span class="sr-only">(current)</span></li>
+            <li class= "nav-item active n-homepage nav-text-mobile">
+                <%= link_to "FAQs", faqs_path, class: "nav-color nav-link nav-text-mobile"%><span class="sr-only">(current)</span></li>
+            </li>
+            <li class= "nav-item active n-homepage nav-text-mobile">
+                <%= link_to "Contact", contact_path, class: "nav-color nav-link nav-text-mobile"%><span class="sr-only">(current)</span></li>
+            </li>      
+        </ul>
+    </div>
+</nav>

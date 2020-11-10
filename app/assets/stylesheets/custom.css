@@ -1,3 +1,18 @@
+/* HOME PAGE CSS */
 .homepage-text{
     color:white;
+}
+
+
+/* MOBILE SPECIFIC CSS */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    .title-mobile{
+        font-size: 60px;
+    }
+    .subtitle-mobile{
+        font-size: 50px;
+    }
+    .description-mobile{
+        font-size: 40px;
+    }
 }
