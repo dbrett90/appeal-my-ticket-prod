@@ -1,11 +1,9 @@
 
 <input type="checkbox" id="active">
-<label for="active" class="menu-btn"><i class="fas fa-bars bring-front"></i></label>
+<label for="active" class="menu-btn"><i class="fas fa-bars fa-btn-mobile bring-front"></i></label>
 <div class="wrapper">
     <ul class= "bring-front">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "FAQs", faqs_path %></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><%= link_to "Home", root_path, class: "title-mobile mb-5" %></li><br>
+        <li><%= link_to "FAQs", faqs_path, class: "title-mobile" %></li>
     </ul>
 </div>
