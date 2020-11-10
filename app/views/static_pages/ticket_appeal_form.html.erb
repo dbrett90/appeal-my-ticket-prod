@@ -1,0 +1,42 @@
+<% provide(:title, "Appeal A Ticket") %>
+<div class="contact-us">
+    <section class = "jumbotron-gradient pt-5">
+        <div class="container" id= "contact-form-scroll">
+        <% states = us_states %>
+            <h1>Fill out the form below and our team will get to work</h1>
+            <div class="row">
+                <div class="col-12 col-lg-8 pb-3">
+                    <div class="form-block">
+                        <%= form_for(:ticket_appeal, url: ticket_appeal_form_path) do |f| %>
+                        <div class="text-block pb-3 subtitle-description-mobile">
+                            Please fill out the form below with how we can help you today and a support specialist will contact you shorty. Thank you!
+                        </div>
+                        <%= f.label :contact_name, class: 'field-label emphasis contact-form-item-mobile' do %>
+                            <span class = 'field-label emphasis'> *Full Name </span><br>
+                        <% end %><br>
+                        <%= f.text_field :contact_name, class: 'form-control form-control-mobile', placeholder: "Full Name" %><br>
+                        <%= f.label :contact_email, class: 'field-label emphasis contact-form-item-mobile' do %>
+                            <span class = 'field-label emphasis'> *Email </span><br>
+                        <% end %><br>
+                        <%= f.email_field :contact_email, class: 'form-control form-control-mobile', placeholder: "Email" %><br>
+                        <%= f.label :plate_number, class: 'field-label emphasis contact-form-item-mobile' do %>
+                            <span class = 'field-label emphasis'> *License Plate Number </span><br>
+                        <% end %><br>
+                        <%= f.text_field :plate_number, class: 'form-control form-control-mobile', placeholder: "License Plate Number" %><br>
+                        <%= f.label :plate_state, class: 'field-label emphasis contact-form-item-mobile' do %>
+                            <span class = 'field-label emphasis'> *License Plate State </span><br>
+                        <% end %><br>
+                        <%= select_tag :plate_state, options_for_select(states), class: "form-control form-control-mobile" %><br>
+                        <%= f.label :ticket_number, class: 'field-label emphasis contact-form-item-mobile' do %>
+                            <span class = 'field-label emphasis'> *Ticket Number </span><br>
+                        <% end %><br>
+                        <%= f.text_field :ticket_number, class: 'form-control form-control-mobile', placeholder: "Ticket Number", required: true %><br>
+                    
+                        <%= f.submit "Submit", class: "btn btn-light rounded-button description-mobile" %><br>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
