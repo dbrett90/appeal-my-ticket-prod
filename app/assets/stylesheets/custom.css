@@ -1,7 +1,25 @@
+/* NAVBAR SPECIFIC CSS */
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    background:white;
+    z-index: 9999;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    margin-right: 7px;
+}
+
+
 /* HOME PAGE CSS */
 .homepage-text{
     color:white;
 }
+
 
 
 /* MOBILE SPECIFIC CSS */
