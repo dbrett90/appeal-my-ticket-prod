@@ -169,11 +169,19 @@ input[type="checkbox"]{
   color: white;
 }
 
+/* APPEAL FORM FIELD */
+.form-color{
+  color: white;
+}
+
 
 /* MOBILE SPECIFIC CSS */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
     .title-mobile{
-        font-size: 60px !important;
+        font-size: 60px;
+    }
+    .navbar-mobile{
+      font-size: 55px !important;
     }
     .subtitle-mobile{
         font-size: 50px;
