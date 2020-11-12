@@ -175,9 +175,9 @@ input[type="checkbox"]{
 }
 
 /* For the autocomplete popup */
-div.pac-container{
+/* div.pac-container{
   z-index: 100000 !important;
-}
+} */
 
 /* FLASH STYLING */
 .flash-styling{
