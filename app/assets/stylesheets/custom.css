@@ -174,8 +174,9 @@ input[type="checkbox"]{
   color: white;
 }
 
+/* For the autocomplete popup */
 .pac-container{
-  z-index: 99 !important;
+  z-index: 10000 !important;
 }
 
 /* FLASH STYLING */
