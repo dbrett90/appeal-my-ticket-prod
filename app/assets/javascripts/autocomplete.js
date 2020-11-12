@@ -27,3 +27,9 @@ google.maps.event.addDomListener(window, 'load', function() {
  initializeAutocomplete('autocomplete_address');   
  }); 
 }); 
+
+$(document).on({
+    'DOMNodeInserted': function() {
+        $('.pac-item, .pac-item span', this).addClass('needsclick');
+    }
+}, '.pac-container');
