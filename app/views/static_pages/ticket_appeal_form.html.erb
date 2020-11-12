@@ -16,7 +16,6 @@
                             <span class = 'field-label emphasis description-mobile'> *Email </span><br>
                         <% end %><br>
                         <%= f.email_field :email, class: 'form-control form-control-mobile description-mobile', placeholder: "Email" %><br>
-                        <div class="field">
                         <%= f.label :plate_number, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                             <span class = 'field-label emphasis description-mobile'> *License Plate Number </span><br>
                         <% end %><br>
@@ -29,6 +28,11 @@
                             <span class = 'field-label emphasis description-mobile'> *Ticket Number </span><br>
                         <% end %><br>
                         <%= f.text_field :ticket_number, class: 'form-control form-control-mobile description-mobile', placeholder: "Ticket Number", required: true %><br>
+                        <%= f.label :address, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
+                            <span class = 'field-label emphasis description-mobile'> *Home Address </span><br>
+                        <% end %><br>
+                        <%= f.text_field :address, class: 'form-control form-control-mobile description-mobile', placeholder: "Enter your home address", id: "autocomplete_address" %><br>
+                        </div>
                     
                         <%= f.submit "Submit", class: "btn btn-light rounded-button description-mobile" %><br>
                         <% end %>
