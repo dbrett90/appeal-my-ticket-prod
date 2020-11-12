@@ -20,16 +20,10 @@
                             <span class = 'field-label emphasis description-mobile'> *City and state of where the ticket was received </span><br>
                         <% end %><br>
                         <%= f.text_field :city_state_of_ticket, class: 'form-control form-control-mobile description-mobile', placeholder: "City & State you received the ticket from", id: "autocomplete_address" %><br>
-                     
-                    
                         <%= f.label :plate_number, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                             <span class = 'field-label emphasis description-mobile'> *License Plate Number </span><br>
                         <% end %><br>
                         <%= f.text_field :plate_number, class: 'form-control form-control-mobile description-mobile', placeholder: "License Plate Number" %><br>
-                        <%= f.label :plate_state, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
-                            <span class = 'field-label emphasis description-mobile'> *License Plate State </span><br>
-                        <% end %><br>
-                        <%= select_tag :plate_state, options_for_select(states), class: "form-control description-mobile" %><br>
                         <%= f.label :ticket_number, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                             <span class = 'field-label emphasis description-mobile'> *Ticket Number </span><br>
                         <% end %><br>
