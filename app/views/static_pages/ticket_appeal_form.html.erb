@@ -19,11 +19,11 @@
                             <%= f.label :plate_number, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                                 <span class = 'field-label emphasis description-mobile'> *License Plate Number </span><br>
                             <% end %><br>
+                            <%= f.text_field :plate_number, class: 'form-control form-control-mobile description-mobile', placeholder: "License Plate Number" %><br>
                             <%= f.label :address, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
                                 <span class = 'field-label emphasis description-mobile'> Home Address </span><br>
                             <% end %><br>
                             <%= f.text_field :address, class: 'form-control form-control-mobile description-mobile', placeholder: "Enter your home address", id: :autocomplete_address %><br>
-                            <%= f.text_field :plate_number, class: 'form-control form-control-mobile description-mobile', placeholder: "License Plate Number" %><br>
                             <%= f.label :plate_state, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
                                 <span class = 'field-label emphasis description-mobile'> *License Plate State </span><br>
                             <% end %><br>
