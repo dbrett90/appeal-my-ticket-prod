@@ -3,7 +3,6 @@ $(document).on('turbolinks:load', function() {
 function initializeAutocomplete(id) {     
      var element = document.getElementById(id);
      if (element) {
-        console.log("THIS IS A TEST");
        var autocomplete = new google.maps.places.Autocomplete(element, { types: ['geocode'], componentRestrictions: {country: 'us'} });
        google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
        }
