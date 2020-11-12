@@ -16,14 +16,18 @@
                                 <span class = 'field-label emphasis description-mobile'> *Email </span><br>
                             <% end %><br>
                             <%= f.email_field :email, class: 'form-control form-control-mobile description-mobile', placeholder: "Email" %><br>
+                            <%= f.label :address, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
+                                <span class = 'field-label emphasis description-mobile'> *Home Address </span><br>
+                            <% end %><br>
+                            <%= f.text_field :address, class: 'form-control form-control-mobile description-mobile', placeholder: "Enter your home address", id: :autocomplete_address %><br>
+                            <%= f.label :city_state_of_ticket, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
+                                <span class = 'field-label emphasis description-mobile'> *City & State of Ticket </span><br>
+                            <% end %><br>
+                            <%= f.text_field :city_state_of_ticket, class: 'form-control form-control-mobile description-mobile', placeholder: "Input the city and state of here the ticket was received", id: :autocomplete_address %><br>
                             <%= f.label :plate_number, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                                 <span class = 'field-label emphasis description-mobile'> *License Plate Number </span><br>
                             <% end %><br>
                             <%= f.text_field :plate_number, class: 'form-control form-control-mobile description-mobile', placeholder: "License Plate Number" %><br>
-                            <%= f.label :address, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
-                                <span class = 'field-label emphasis description-mobile'> Home Address </span><br>
-                            <% end %><br>
-                            <%= f.text_field :address, class: 'form-control form-control-mobile description-mobile', placeholder: "Enter your home address", id: :autocomplete_address %><br>
                             <%= f.label :plate_state, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
                                 <span class = 'field-label emphasis description-mobile'> *License Plate State </span><br>
                             <% end %><br>
@@ -32,6 +36,11 @@
                                 <span class = 'field-label emphasis description-mobile'> *Ticket Number </span><br>
                             <% end %><br>
                             <%= f.text_field :ticket_number, class: 'form-control form-control-mobile description-mobile', placeholder: "Ticket Number", required: true %><br>
+                            <%= f.label :additional_complaint_information, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
+                                <span class = 'field-label emphasis description-mobile'> Additional Information </span><br>
+                            <% end %><br>
+                            <%= f.text_area :additional_complaint_information, class: 'form-control form-control-mobile description-mobile', placeholder: "Input additional information that could hellp with the appeal" %><br>
+                            
                             <%= f.submit "Submit", class: "btn btn-light rounded-button description-mobile" %><br>
                         <% end %>
                     </div>
