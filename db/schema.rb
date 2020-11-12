@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_12_022119) do
+ActiveRecord::Schema.define(version: 2020_11_12_220906) do
 
   create_table "ticket_complaints", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2020_11_12_022119) do
     t.text "plate_state"
     t.string "ticket_number"
     t.text "home_address"
+    t.text "city_state_of_ticket"
+    t.text "additional_complaint_information"
   end
 
 end
