@@ -35,6 +35,15 @@ $('#autocomplete_address').keypress(function() {
         } 
 }); 
 
+if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+    setTimeout(function() {
+        var container = document.getElementsByClassName('pac-container')[0];
+        container.addEventListener('touchend', function(e) {
+            e.stopImmediatePropagation();
+        });
+    }, 500);
+}
+
 $(document).on('turbolinks:load', function() {
 function initializeAutocomplete(id) {     
      var element = document.getElementById(id);
