@@ -1,0 +1,2 @@
+class TicketComplaint < ApplicationRecord
+end

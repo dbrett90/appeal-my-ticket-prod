@@ -6,9 +6,14 @@ class StaticPagesController < ApplicationController
     end 
 
     def ticket_appeal_form
+        # flash[:danger] = "Test"
     end
 
     def submit_ticket_appeal_form
+        new_complaint = TicketComplaint.new(name: params[:ticket_appeal][:name], email: params[:ticket_appeal][:email], plate_number: params[:ticket_appeal][:plate_number], plate_state: params[:plate_state], ticket_number: params[:ticket_appeal][:ticket_number])
+        new_complaint.save
+        redirect_to root_path
+        flash[:success] = "Your response has been logged and our team will be in touch shortly."
     end
 
     def index

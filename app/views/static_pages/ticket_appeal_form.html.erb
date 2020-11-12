@@ -8,14 +8,20 @@
                 <div class="col-12 col-lg-8 pb-3">
                     <div class="form-block">
                         <%= form_for(:ticket_appeal, url: ticket_appeal_form_path) do |f| %>
-                        <%= f.label :contact_name, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
+                        <%= f.label :name, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                             <span class = 'field-label emphasis'> *Full Name </span><br>
                         <% end %><br>
-                        <%= f.text_field :contact_name, class: 'form-control form-control-mobile description-mobile', placeholder: "Full Name" %><br>
-                        <%= f.label :contact_email, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
+                        <%= f.text_field :name, class: 'form-control form-control-mobile description-mobile', placeholder: "Full Name" %><br>
+                        <%= f.label :email, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                             <span class = 'field-label emphasis description-mobile'> *Email </span><br>
                         <% end %><br>
-                        <%= f.email_field :contact_email, class: 'form-control form-control-mobile description-mobile', placeholder: "Email" %><br>
+                        <%= f.email_field :email, class: 'form-control form-control-mobile description-mobile', placeholder: "Email" %><br>
+                        <div class="field">
+                        <%= f.label :address, class: 'form-color field-label emphasis contact-form-item-mobile' do %>
+                            <span class = 'field-label emphasis description-mobile'> Home Address </span><br>
+                        <% end %><br>
+                        <%= f.text_field :address, class: 'form-control form-control-mobile description-mobile', placeholder: "Enter your home address", id: :autocomplete_address %><br>
+                        </div>
                         <%= f.label :plate_number, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                             <span class = 'field-label emphasis description-mobile'> *License Plate Number </span><br>
                         <% end %><br>

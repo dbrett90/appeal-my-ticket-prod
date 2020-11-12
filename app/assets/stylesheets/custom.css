@@ -174,6 +174,11 @@ input[type="checkbox"]{
   color: white;
 }
 
+/* FLASH STYLING */
+.flash-styling{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
 /* MOBILE SPECIFIC CSS */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
@@ -196,5 +201,8 @@ input[type="checkbox"]{
     .menu-btn{
       height: 4em;
       width: 4em;
+    }
+    .flash-styling{
+      font-size: 40px;
     }
 }
