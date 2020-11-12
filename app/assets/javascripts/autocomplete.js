@@ -27,6 +27,13 @@
 //     });
 // });
 // observer.observe(document.body, observer_config);
+var pacContainerInitialized = false; 
+$('#autocomplete_address').keypress(function() { 
+        if (!pacContainerInitialized) { 
+                $('.pac-container').css('z-index', '9999'); 
+                pacContainerInitialized = true; 
+        } 
+}); 
 
 $(document).on('turbolinks:load', function() {
 function initializeAutocomplete(id) {     
