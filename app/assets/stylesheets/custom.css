@@ -210,4 +210,10 @@ input[type="checkbox"]{
     .flash-styling{
       font-size: 40px;
     }
+    .pac-item{
+      font-size: 30px;
+    }
+    .pac-item-query{
+      font-size: 30px;
+    }
 }
