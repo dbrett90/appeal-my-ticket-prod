@@ -27,22 +27,22 @@
 //     });
 // });
 // observer.observe(document.body, observer_config);
-var pacContainerInitialized = false; 
-$('#autocomplete_address').keypress(function() { 
-        if (!pacContainerInitialized) { 
-                $('.pac-container').css('z-index', '9999'); 
-                pacContainerInitialized = true; 
-        } 
-}); 
+// var pacContainerInitialized = false; 
+// $('#autocomplete_address').keypress(function() { 
+//         if (!pacContainerInitialized) { 
+//                 $('.pac-container').css('z-index', '9999'); 
+//                 pacContainerInitialized = true; 
+//         } 
+// }); 
 
-if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
-    setTimeout(function() {
-        var container = document.getElementsByClassName('pac-container')[0];
-        container.addEventListener('touchend', function(e) {
-            e.stopImmediatePropagation();
-        });
-    }, 500);
-}
+// if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
+//     setTimeout(function() {
+//         var container = document.getElementsByClassName('pac-container')[0];
+//         container.addEventListener('touchend', function(e) {
+//             e.stopImmediatePropagation();
+//         });
+//     }, 500);
+// }
 
 $(document).on('turbolinks:load', function() {
 function initializeAutocomplete(id) {     
