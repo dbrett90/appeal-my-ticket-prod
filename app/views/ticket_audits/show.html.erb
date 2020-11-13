@@ -1,0 +1,51 @@
+<% provide(:title, "Ticket # #{@ticket_complaint.id}") %>
+<div class="homepage">
+    <div class="homepage-2019">
+        <section class="jumbotron jumbotron-fluid jumbotron-mobile jumbotron-gradient">
+          <div class="container">
+            <div class = "row">
+                <div class = "col-12">
+                    <table>
+                        <tr>
+                            <th class = "pr-5 form-color">Name</th>
+                            <th class = "pr-5 form-color">Email</th>
+                            <th class = "pr-5 form-color">Home Address</th>
+                        </tr>
+                        <tr>
+                            <td class = "pr-5 pb-5 form-color"><%= @ticket_complaint.name %></td>
+                            <td class = "pr-5 pb-5 form-color"><%= @ticket_complaint.email %></td>
+                            <td class = "pr-5 pb-5 form-color"><%= @ticket_complaint.home_address %></td>
+                        </tr>
+                        <tr>
+                            <th class = "pr-5 form-color">Plate Number</th>
+                            <th class = "pr-5 form-color">Plate State</th>
+                            <th class = "pr-5 form-color">Ticket Received In:</th>
+                            <th class = "pr-5 form-color">Ticket Number</th>
+                        </tr>
+                        <tr>
+                            <td class = "pr-5 pb-5 form-color"><%= @ticket_complaint.plate_number %></td>
+                            <td class = "pr-5 pb-5 form-color"><%= @ticket_complaint.plate_state %></td>
+                            <td class = "pr-5 pb-5 form-color"><%= @ticket_complaint.city_state_of_ticket %></td>
+                            <td class = "pr-5 pb-5 form-color"><%= @ticket_complaint.ticket_number %></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class = "col-12 text-left">
+                    <p class = "form-color"><strong>Additional Information: </strong> </p>
+                    <p class = "form-color"><%= @ticket_complaint.additional_complaint_information %></p>
+                </div>
+                <section class = "col-12 images text-left">
+                    <p class = "form-color"><strong>Ticket Images</strong></p>
+                    <% (0..@ticket_complaint.images.count).each do |image| %>
+                        <div class = "col-4">
+                            <%= image_tag @ticket_complaint.images[image], class:"img-fluid", alt: "Ticket Appeal Image" %>
+                        </div>
+                    <% end %>
+                </section>
+            </div>
+          </div>
+        </section>
+    </div>
+</div>
+
+

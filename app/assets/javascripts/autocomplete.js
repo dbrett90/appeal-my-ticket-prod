@@ -44,7 +44,7 @@
 //     }, 500);
 // }
 
-$(document).on('turbolinks:load', function() {
+$(document).on('ready page:load', function() {
 function initializeAutocomplete(id) {     
      var element = document.getElementById(id);
      if (element) {
@@ -69,6 +69,7 @@ for (var i in place.address_components) {
  }
 }   
 google.maps.event.addDomListener(window, 'load', function() {
- initializeAutocomplete('autocomplete_address');   
+ initializeAutocomplete('autocomplete_address');
+ initializeAutocomplete('autocomplete_city');    
  }); 
 }); 

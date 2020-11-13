@@ -10,7 +10,8 @@ class StaticPagesController < ApplicationController
     end
 
     def submit_ticket_appeal_form
-        new_complaint = TicketComplaint.new(name: params[:ticket_appeal][:name], email: params[:ticket_appeal][:email], home_address: params[:ticket_appeal][:address], plate_number: params[:ticket_appeal][:plate_number], plate_state: params[:plate_state], ticket_number: params[:ticket_appeal][:ticket_number])
+        # flash[:danger] = params
+        new_complaint = TicketComplaint.new(name: params[:ticket_appeal][:name], email: params[:ticket_appeal][:email], home_address: params[:ticket_appeal][:address], plate_number: params[:ticket_appeal][:plate_number], plate_state: params[:plate_state], ticket_number: params[:ticket_appeal][:ticket_number], city_state_of_ticket: params[:ticket_appeal][:city_state_of_ticket], additional_complaint_information: params[:ticket_appeal][:additional_complaint_information])
         new_complaint.save
         redirect_to root_path
         flash[:success] = "Your response has been logged and our team will be in touch shortly."
