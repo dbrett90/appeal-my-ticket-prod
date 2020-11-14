@@ -21,7 +21,7 @@ gem "geocoder"
 gem "figaro"
 gem 'jquery-rails'
 gem 'gmaps-autocomplete-rails' 
-gem "aws-sdk-s3", require: false
+#gem "aws-sdk-s3", require: false
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
