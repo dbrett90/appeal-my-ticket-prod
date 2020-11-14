@@ -39,7 +39,7 @@
                     <div class = "row">
                         <% (0...@ticket_complaint.images.count).each do |image| %>
                             <div class = "col-4">
-                                <%= image_tag(@ticket_complaint.images[image], class:"img-fluid", alt: "Ticket Appeal Image")%>
+                                <%= image_tag(@ticket_complaint.images[image], data: {fancybox: 'gallery'}, class:"img-fluid", alt: "Ticket Appeal Image")%>
                             </div>
                         <% end %>
                     </div>
