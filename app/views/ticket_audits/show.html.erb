@@ -36,11 +36,13 @@
                 </div>
                 <section class = "col-12 images text-left">
                     <p class = "form-color"><strong>Ticket Images</strong></p>
-                    <% (0..@ticket_complaint.images.count).each do |image| %>
-                        <div class = "col-4">
-                            <%= image_tag @ticket_complaint.images[image], class:"img-fluid", alt: "Ticket Appeal Image" %>
-                        </div>
-                    <% end %>
+                    <div class = "row">
+                        <% (0...@ticket_complaint.images.count).each do |image| %>
+                            <div class = "col-4">
+                                <%= image_tag(@ticket_complaint.images[image], class:"img-fluid", alt: "Ticket Appeal Image")%>
+                            </div>
+                        <% end %>
+                    </div>
                 </section>
             </div>
           </div>

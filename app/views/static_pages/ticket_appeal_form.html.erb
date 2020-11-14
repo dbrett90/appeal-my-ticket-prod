@@ -40,10 +40,10 @@
                                 <span class = 'field-label emphasis description-mobile'> Additional Information </span><br>
                             <% end %><br>
                             <%= f.text_area :additional_complaint_information, class: 'form-control form-control-mobile description-mobile', placeholder: "Input additional information that could hellp with the appeal" %><br>
-                            <%= f.label :thumbail, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
+                            <%= f.label :images, class: 'form-color field-label emphasis contact-form-item-mobile description-mobile' do %>
                                 <span class = 'field-label emphasis  description-mobile'> File Upload - Please Include Photo of Ticket</span><br>
                             <% end %><br>
-                            <%= f.file_field :thumbnail, class: "form-control description-mobile", multiple: true %> <br>
+                            <%= f.file_field :images, class: "form-control description-mobile", multiple: true %> <br>
                             
                             <%= f.submit "Submit", class: "btn btn-light rounded-button description-mobile" %><br>
                         <% end %>
