@@ -216,4 +216,8 @@ input[type="checkbox"]{
     .pac-item-query{
       font-size: 30px;
     }
+    iframe{
+      width: 200px;
+      height: 200px;
+    }
 }
