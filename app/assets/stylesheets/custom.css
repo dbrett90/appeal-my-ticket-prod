@@ -216,7 +216,7 @@ input[type="checkbox"]{
     .pac-item-query{
       font-size: 30px;
     }
-    #fb-root > div.fb_dialog.fb_dialog_mobile > div.fb_dialog_content > iframe:nth-child(1){
+    ._90dp{
       width: 200px;
       height: 200px;
     }
