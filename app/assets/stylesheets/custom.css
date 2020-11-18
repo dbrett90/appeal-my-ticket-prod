@@ -200,10 +200,9 @@ input[type="checkbox"]{
         font-size: 40px;
     }
     .fa-btn-mobile{
-      /* size: 7em; */
       font-size: 4em;
-    } */
-    /* .menu-btn{
+    }
+    .menu-btn{
       height: 4em;
       width: 4em;
     }
