@@ -188,11 +188,11 @@ input[type="checkbox"]{
 /* MOBILE SPECIFIC CSS */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .title-large{
-    font-size: 45px;
+    font-size: 35px;
   }
 
   .subtitle-large{
-    font-size: 25px;
+    font-size: 20px;
   }
   .title-mobile{
     font-size: 45px;
@@ -203,7 +203,7 @@ input[type="checkbox"]{
   }
 
   .description-mobile{
-    font-size: 20px;
+    font-size: 15px;
   }
     /* .title-mobile{
         font-size: 60px;
