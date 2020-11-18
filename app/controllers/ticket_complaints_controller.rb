@@ -1,9 +1,11 @@
 class TicketComplaintsController < ApplicationController
+  layout 'custom'
   def index
     @ticket_complaint = TicketComplaint.all
   end
 
   def new
+    # render :layout => 'custom'
     @ticket_complaint = TicketComplaint.new 
     @ticket_complaints = TicketComplaint.all
   end
