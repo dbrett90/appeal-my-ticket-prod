@@ -216,8 +216,8 @@ input[type="checkbox"]{
     .pac-item-query{
       font-size: 30px;
     }
-    .x1-5{
-      width: 200px;
-      height: 200px;
+    .fb-customerchat{
+      width: 200px !important;
+      height: 200px !important;
     }
 }
