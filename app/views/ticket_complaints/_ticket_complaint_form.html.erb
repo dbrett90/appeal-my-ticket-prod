@@ -11,23 +11,6 @@
         <span class = 'field-label emphasis'> *Home Address </span><br>
     <% end %><br>
     <%= f.text_field :home_address, class: 'form-control', placeholder: "Enter your home address", id: :autocomplete_address, required: true %><br>
-    <%= f.label :city_state_of_ticket, class: 'form-color field-label emphasis' do %>
-        <span class = 'field-label emphasis'> *City & State of Ticket </span><br>
-    <% end %><br>
-    <%= f.text_field :city_state_of_ticket, class: 'form-control', placeholder: "Input the city and state of here the ticket was received", id: :autocomplete_city, required: true %><br>
-    <%= f.label :plate_number, class: 'form-color field-label emphasis' do %>
-        <span class = 'field-label emphasis'> *License Plate Number </span><br>
-    <% end %><br>
-    <%= f.text_field :plate_number, class: 'form-control form-control-mobile', placeholder: "License Plate Number", required: true %><br>
-    <%= f.label :plate_state, class: 'form-color field-label emphasis' do %>
-        <span class = 'field-label emphasis'> *License Plate State </span><br>
-    <% end %><br>
-    <% states = us_states %>
-    <%= select_tag :plate_state, options_for_select(states), class: "form-control", required: true %><br>
-    <%= f.label :ticket_number, class: 'form-color field-label emphasis' do %>
-        <span class = 'field-label emphasis'> *Ticket Number </span><br>
-    <% end %><br>
-    <%= f.text_field :ticket_number, class: 'form-control', placeholder: "Ticket Number", required: true %><br>
     <%= f.label :additional_complaint_information, class: 'form-color field-label emphasis' do %>
         <span class = 'field-label emphasis'> Additional Information </span><br>
     <% end %><br>
