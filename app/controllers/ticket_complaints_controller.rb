@@ -16,8 +16,9 @@ class TicketComplaintsController < ApplicationController
   def create
     @ticket_complaint = TicketComplaint.new(ticket_complaint_params)
     if @ticket_complaint.save
+        TicketFormSubmissionMailer.ticket_successfully_submitted(:email).deliver_now
         flash[:success] = "Your appeal has been logged. Our team will be in contact shortly."
-        flash[:danger] = params
+        # flash[:danger] = params
         redirect_to root_path
     else
         render 'new'

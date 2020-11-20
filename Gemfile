@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 2.5'
 #Emulate chatbot functionality to fight parking tickets
 gem 'telegram-bot'
 
+#Mailer gems
+gem 'sendgrid-ruby'
+
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'
 gem 'devise'
