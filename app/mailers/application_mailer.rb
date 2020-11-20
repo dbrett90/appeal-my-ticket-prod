@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'info@danharringtondrink.com'
+  default from: 'appealmyticketbot@gmail.com'
   layout 'mailer'
 end
