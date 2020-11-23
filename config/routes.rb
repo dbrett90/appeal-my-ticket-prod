@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get '/faqs', to: 'static_pages#faqs'
   get '/ticket-appeal-form', to: 'static_pages#ticket_appeal_form'
   post '/ticket-appeal-form', to: 'static_pages#submit_ticket_appeal_form'
+  get '/contact', to: 'static_pages#contact'
+  post '/contact', to: 'static_pages#contact_form'
   resources :ticket_audits
   resources :ticket_complaints
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

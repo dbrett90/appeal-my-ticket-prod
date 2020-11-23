@@ -19,6 +19,15 @@ class StaticPagesController < ApplicationController
         flash[:success] = "Your response has been logged and our team will be in touch shortly."
     end
 
+    def contact
+    end
+
+    def contact_form
+        TicketFormSubmissionMailer.contact(params[:contact][:contact_name], params[:contact][:contact_email], params[:contact][:contact_how], params[:contact][:contact_help]).deliver_now
+        flash[:success] = "Your message has been received. We will be in contact shortly."
+        redirect_to contact_url
+    end
+
     def index
     end
 
