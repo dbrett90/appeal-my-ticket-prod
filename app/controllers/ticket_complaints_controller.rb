@@ -17,6 +17,7 @@ class TicketComplaintsController < ApplicationController
     @ticket_complaint = TicketComplaint.new(ticket_complaint_params)
     if @ticket_complaint.save
         TicketFormSubmissionMailer.ticket_successfully_submitted(params[:ticket_complaint][:email]).deliver_now
+        # flash[:danger] = params
         flash[:success] = "Your appeal has been logged. Our team will be in contact shortly."
         redirect_to root_path
     else
@@ -36,7 +37,7 @@ class TicketComplaintsController < ApplicationController
   private
 
   def ticket_complaint_params
-    params.require(:ticket_complaint).permit(:name, :email, :plate_number, :plate_state, :ticket_number, :address, :city_state_of_ticket, :additional_complaint_information, images: [])
+    params.require(:ticket_complaint).permit(:name, :email, :plate_number, :plate_state, :ticket_number, :home_address, :city_state_of_ticket, :additional_complaint_information, images: [])
   end
 
   def us_states
