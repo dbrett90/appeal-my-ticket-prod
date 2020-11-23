@@ -7,18 +7,16 @@
                 <tr>
                     <th class = "pr-5 form-color">Name</th>
                     <th class = "pr-5 form-color">Email</th>
-                    <th class = "pr-5 form-color">Where Ticket Given</th>
-                    <th class = "pr-5 form-color">Ticket Number/ID</th>
                     <th class = "pr-5 form-color">Additional Info</th>
+                    <th class = "pr-5 form-color">Submitted At</th>
                     <th class = "pr-5 form-color">Full Complaint </th>
                 </tr>
                 <% @ticket_complaints.each do |complaint| %>
                     <tr>
                         <td class = "pr-5 pb-3 form-color"><%= complaint.name %></td>
                         <td class = "pr-5 pb-3 form-color"><%= complaint.email %></td>
-                        <td class = "pr-5 pb-3 form-color"><%= complaint.city_state_of_ticket %></td>
-                        <td class = "pr-5 pb-3 form-color"><%= complaint.ticket_number %></td>
                         <td class = "pr-5 pb-3 form-color"><%= complaint.additional_complaint_information %></td>
+                        <td class = "pr-5 pb-3 form-color"><%= complaint.created_at %></td>
                         <td class = "pr-5 pb-3 form-color"><%= link_to "Here", ticket_audit_path(complaint) %></td>
                     </tr>
                 <% end %>
