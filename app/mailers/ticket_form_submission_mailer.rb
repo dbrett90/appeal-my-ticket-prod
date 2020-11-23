@@ -4,7 +4,7 @@ class TicketFormSubmissionMailer < ApplicationMailer
         @user_email = user_email
         @user_how = user_how 
         @user_msg = user_msg
-        mail to: "appealmyticketbot@gmail.com", from: "appealmyticketbot@gmail.com", subject: "Support Required"
+        mail to: "appealmyticketbot@gmail.com", subject: "Support Required"
     end
 
     def ticket_successfully_submitted(email)
