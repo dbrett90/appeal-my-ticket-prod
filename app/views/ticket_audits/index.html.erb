@@ -10,6 +10,7 @@
                     <th class = "pr-5 form-color">Additional Info</th>
                     <th class = "pr-5 form-color">Submitted At</th>
                     <th class = "pr-5 form-color">Full Complaint </th>
+                    <th class = "pr-5 form-color">Remove Complaint </th>
                 </tr>
                 <% @ticket_complaints.each do |complaint| %>
                     <tr>
@@ -18,6 +19,7 @@
                         <td class = "pr-5 pb-3 form-color"><%= complaint.additional_complaint_information %></td>
                         <td class = "pr-5 pb-3 form-color"><%= complaint.created_at %></td>
                         <td class = "pr-5 pb-3 form-color"><%= link_to "Here", ticket_audit_path(complaint) %></td>
+                        <td class = "pr-5 pb-3 form-color"><%= link_to 'DELETE', ticket_complaint_path(complaint), data: {confirm: "Are you sure you want to remove this ticket complaint?"}, method: :delete, class: "btn btn-danger btn-mobile" %>
                     </tr>
                 <% end %>
             </table>

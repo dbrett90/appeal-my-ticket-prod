@@ -28,6 +28,9 @@ class TicketComplaintsController < ApplicationController
   end
 
   def destroy
+    TicketComplaint.find(params[:id]).destroy
+    flash[:success] = "Cocktail Kit Deleted"
+    redirect_to ticket_audits_path
   end
 
   private
