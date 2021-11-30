@@ -35,3 +35,4 @@
 
 #Ignore API key for production sending
 /config/environments/production.rb
+/app/views/layouts/application.html.erb
